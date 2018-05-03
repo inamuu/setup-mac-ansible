@@ -1,0 +1,77 @@
+- name: Update homebrew 
+  homebrew: update_homebrew=yes
+
+- name: Install homebrew packages
+  homebrew: name={{ item }} state=present
+  with_items:
+    - ansible
+    - python
+    - pyenv
+    - git
+    - go
+    - htop
+    - openssl
+    - sl
+    - terraform
+    - tmux
+    - tree
+    - wget
+    - zsh
+    - zsh-completions
+    - reattach-to-user-namespace
+    - awscli
+    - cask
+    - docker
+    - docker-compose
+    - grep
+    - putty
+    - telnet
+    - tree
+    - watch
+    - w3m
+    - neovim
+    - iproute2mac
+    - peco
+    - tig
+    - ghq
+    - hub
+    - jq
+    - rbenv
+    - ruby-build
+    - sqlite
+    - envchain
+    - zlib
+    - direnv
+
+- name: Install pip packages
+  pip: name={{ item }}
+  with_items:
+    - powerline-status
+
+- name: Install Homebrew cask packages
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+    accept_external_apps: True
+    install_options: 'appdir=/Applications'
+  with_items:
+    - firefox
+    - google-chrome
+    - google-japanese-ime
+    - karabiner
+    - karabiner-elements
+    - slack
+    - chatwork
+    - iterm2
+    - virtualbox
+    - skitch
+    - alfred
+    - skype
+    - messenger
+    - cyberduck
+    - macdown
+    - thunderbird
+    - clipy
+    - visual-studio-code
+    - shiftit
+    - Franz

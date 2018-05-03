@@ -1,0 +1,6 @@
+
+- git:
+    repo: git@github.com:inamuu/dotfiles.git
+    dest: ${HOME}/dotfiles/
+    version: master
+    accept_hostkey: yes
