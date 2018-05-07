@@ -42,6 +42,7 @@
     - envchain
     - zlib
     - direnv
+    - macvim
 
 - name: Install pip packages
   pip: name={{ item }}
