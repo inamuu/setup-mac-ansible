@@ -185,8 +185,6 @@ bindkey '^R' peco-history-selection
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-source ~/.iterm2_shell_integration.`basename $SHELL`
-
 iterm2_print_user_vars() {
     iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
 }
