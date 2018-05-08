@@ -1,17 +1,30 @@
+### dotfiles
+- name: setup dotfiles
+  file:
+    src: "${PWD}/roles/dotfiles/files/{{ item }}"
+    dest: "${HOME}/{{ item }}"
+    force: true
+    state: link
+  with_items:
+      - .bashrc
+      - .zshrc
+      - .zlogin
+      - .zlogout
+      - .zshenv
+      - .zpreztorc
+      - .vimrc
+      - .gvimrc
+      - .tmux.conf
+      - .commit_template
 
-- git:
-    repo: git@github.com:inamuu/dotfiles.git
-    dest: ${HOME}/dotfiles/
-    version: master
-    accept_hostkey: yes
-
-- name: Add zsh path
+### zsh
+- name: add zsh path
   become: True
   blockinfile:
     dest: /etc/shells
     insertafter: '^/bin/zsh$'
     content: /usr/local/bin/zsh
 
-- name: Change shell to zsh
+- name: change shell to zsh
   become: True
   command: chsh -s '/usrlocal/bin/zsh'
