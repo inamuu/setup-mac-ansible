@@ -44,6 +44,7 @@
     - direnv
     - macvim
     - ricty
+    - fontforge
 
 - name: homebrew tap
   homebrew_tap:
@@ -51,13 +52,6 @@
     state: present
   with_items:
     - sanemat/font
-
-- name: copy ricty files
-  copy:
-    src: "{{ item }}"
-    dest: ${HOME}/Library/Fonts/
-  with_fileglob:
-    - "/usr/local/Cellar/ricty/4.1.0_2/share/fonts/Ricty*"
 
 - name: pip packages
   pip: name={{ item }}

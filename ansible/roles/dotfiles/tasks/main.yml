@@ -59,3 +59,26 @@
   copy:
     src: /tmp/molokai/colors/molokai.vim
     dest: ${HOME}/.vim/colors/molokai.vim
+
+### font
+- name: copy ricty files
+  copy:
+    src: "{{ item }}"
+    dest: ${HOME}/Library/Fonts/
+  with_fileglob:
+    - "/usr/local/Cellar/ricty/4.1.0_2/share/fonts/Ricty*"
+
+- git:
+    repo: git@github.com:Lokaltog/powerline-fontpatcher
+    dest: /tmp/powerline-fontpatcher
+    accept_hostkey: yes
+
+- name: patch font powerline
+  command: fontforge -lang=py -script /tmp/powerline-fontpatcher/scripts/powerline-fontpatcher /usr/local/Cellar/ricty/4.1.0_2/share/fonts/Ricty-Regular.ttf
+  args:
+    chdir: tmp
+
+- name: copy powerline-patch file
+  copy:
+    src: tmp/Ricty Regular for Powerline.ttf
+    dest: ${HOME}/Library/Fonts/
