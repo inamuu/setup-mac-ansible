@@ -4,3 +4,14 @@
     dest: ${HOME}/dotfiles/
     version: master
     accept_hostkey: yes
+
+- name: Add zsh path
+  become: True
+  blockinfile:
+    dest: /etc/shells
+    insertafter: '^/bin/zsh$'
+    content: /usr/local/bin/zsh
+
+- name: Change shell to zsh
+  become: True
+  command: chsh -s '/usrlocal/bin/zsh'

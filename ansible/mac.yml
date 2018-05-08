@@ -2,4 +2,4 @@
   connection: local
   roles:
     - homebrew
-    #- dotfiles
+    - dotfiles
