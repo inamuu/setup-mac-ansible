@@ -1,7 +1,7 @@
-- name: Update homebrew 
+- name: update homebrew 
   homebrew: update_homebrew=yes
 
-- name: Install homebrew packages
+- name: homebrew
   homebrew: name={{ item }} state=present
   with_items:
     - ansible
@@ -43,13 +43,28 @@
     - zlib
     - direnv
     - macvim
+    - ricty
 
-- name: Install pip packages
+- name: homebrew tap
+  homebrew_tap:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - sanemat/font
+
+- name: copy ricty files
+  copy:
+    src: "{{ item }}"
+    dest: ${HOME}/Library/Fonts/
+  with_fileglob:
+    - "/usr/local/Cellar/ricty/4.1.0_2/share/fonts/Ricty*"
+
+- name: pip packages
   pip: name={{ item }}
   with_items:
     - powerline-status
 
-- name: Install Homebrew cask packages
+- name: homebrew cask packages
   homebrew_cask:
     name: "{{ item }}"
     state: present
