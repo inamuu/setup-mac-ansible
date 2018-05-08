@@ -16,6 +16,7 @@
       - .gvimrc
       - .tmux.conf
       - .commit_template
+      - .gitconfig
 
 ### zsh
 - name: add zsh path
