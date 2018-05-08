@@ -2,8 +2,8 @@ set nobackup
 set noswapfile
 
 syntax on
-colorscheme morning
-set guifont=Ricty-RegularForPowerline:h16
+colorscheme molokai
+set guifont=RictyForPowerline-Regular:h16
 
 
 set t_Co=256
