@@ -1,19 +1,25 @@
 # Setup for mac by ansible
 
-Install homebrew and ansible
+### Install homebrew and ansible
 
 ```sh
 sh init.sh
 ```
 
-Dryrun playbook 
+### Dryrun ansible
 
 ```sh
-ansible-playbook -i playbook/hosts playbook/mac.yml --check
+ansible-playbook -i ansible/hosts ansible/mac.yml --check --ask-become-pass
 ```
 
-Execute playbook
+### Execute ansible
 
 ```sh
-ansible-playbook -i playbook/hosts playbook/mac.yml
+ansible-playbook -i ansible/hosts ansible/mac.yml --ask-become-pass
+```
+
+### Execute ansible specific task
+
+```sh
+ansible-playbook -i ansible/hosts ansible/mac.yml --start-at='Change shell to zsh' --ask-become-pass
 ```
