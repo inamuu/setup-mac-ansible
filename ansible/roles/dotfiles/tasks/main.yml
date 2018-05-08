@@ -30,6 +30,18 @@
   become: True
   command: chsh -s '/usrlocal/bin/zsh'
 
+- git:
+    repo: git@github.com:sorin-ionescu/prezto.git
+    dest: ${HOME}/.zprezto
+    version: master
+    accept_hostkey: yes
+
+- name: link mytheme
+  file:
+    src: ${PWD}/roles/dotfiles/files/.zprezto/modules/prompt/external/mytheme/prompt_mytheme_setup
+    dest: ${HOME}/.zprezto/modules/prompt/functions/prompt_mytheme_setup
+    state: link
+
 ### vim
 - git:
     repo: git@github.com:Shougo/neobundle.vim
