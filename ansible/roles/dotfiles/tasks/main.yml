@@ -28,3 +28,21 @@
 - name: change shell to zsh
   become: True
   command: chsh -s '/usrlocal/bin/zsh'
+
+### vim
+- git:
+    repo: git@github.com:Shougo/neobundle.vim
+    dest: ${HOME}/.vim/bundle/neobundle.vim
+    version: master
+    accept_hostkey: yes
+
+- git:
+    repo: git@github.com:tomasr/molokai
+    dest: /tmp/molokai
+    version: master
+    accept_hostkey: yes
+
+- name: set molokai file
+  copy:
+    src: /tmp/molokai/colors/molokai.vim
+    dest: ${HOME}/.vim/colors/molokai.vim
