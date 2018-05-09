@@ -60,6 +60,13 @@
     src: /tmp/molokai/colors/molokai.vim
     dest: ${HOME}/.vim/colors/molokai.vim
 
+### tmux
+- git:
+    repo: git@github.com:/tmux-plugins/tpm
+    dest: ${HOME}/.tmux/plugins/tpm
+    version: master
+    accept_hostkey: yes
+
 ### font
 - name: copy ricty files
   copy:
