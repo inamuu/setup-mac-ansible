@@ -222,6 +222,7 @@ alias ga='git add'
 alias gpl='git pull'
 alias gps='git push -u origin'
 alias gpsf='git push -f -u origin'
+alias github='cd ~/Github'
 
 ### Start tmux
 [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
@@ -230,7 +231,7 @@ alias gpsf='git push -f -u origin'
 alias be='bundle exec'
 alias ber='bundle exec rake'
 
-### hub
+### ghq
 alias gh='cd $(ghq root)/$(ghq list | peco)'
 
 ### Python
@@ -258,7 +259,7 @@ alias doc='docker-compose'
 
 ### gcloud
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/usr0600421/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/usr0600421/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then source "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
 
 ### ESC Timeout
 # http://lazy-dog.hatenablog.com/entry/2015/12/24/001648
