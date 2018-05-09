@@ -43,6 +43,7 @@
     - zlib
     - direnv
     - macvim
+    - coreutils
     - ricty
     - fontforge
 
