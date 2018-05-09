@@ -21,6 +21,12 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 " vim-terraform
 NeoBundle 'hashivim/vim-terraform.git'
 
+" indent for yaml
+NeoBundle 'chase/vim-ansible-yaml'
+
+" ブロックのendを自動で挿入
+NeoBundle 'tpope/vim-endwise'
+
 " vim preview
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
