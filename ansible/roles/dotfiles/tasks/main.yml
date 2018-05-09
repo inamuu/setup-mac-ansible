@@ -18,6 +18,12 @@
       - .commit_template
       - .gitconfig
 
+### mkdir tmp
+- name: mkdir tmp
+  file:
+    dest: ${PWD}/tmp
+    state: directory
+
 ### zsh
 - name: add zsh path
   become: True
