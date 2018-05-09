@@ -202,6 +202,8 @@ alias cp='cp -vi'
 alias ..='cd ..'
 alias vi='vim'
 alias c='clear'
+alias date='/usr/local/bin/gdate'
+alias sed='/usr/local/bin/gsed'
 
 function chpwd() { ls -GAF }
 
