@@ -18,6 +18,22 @@
       - .commit_template
       - .gitconfig
 
+### mkdir tmp
+- name: mkdir tmp
+  file:
+    dest: ${PWD}/{{ name }}
+    state: directory
+  with_items:
+    - tmp
+    - .config
+
+### karabiner
+- name: karabiner config
+  file: 
+    src: ${PWD}/roles/dotfiles/files/.config/karabiner
+    dest: ${HOME}/.config/karabiner
+    state: link
+
 ### zsh
 - name: add zsh path
   become: True
@@ -33,6 +49,7 @@
 - git:
     repo: git@github.com:sorin-ionescu/prezto.git
     dest: ${HOME}/.zprezto
+    force: yes
     version: master
     accept_hostkey: yes
 
@@ -43,6 +60,11 @@
     state: link
 
 ### vim
+- name:
+  file:
+    dest: ~/.vim/colors
+    state: directory
+
 - git:
     repo: git@github.com:Shougo/neobundle.vim
     dest: ${HOME}/.vim/bundle/neobundle.vim
