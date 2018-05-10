@@ -21,7 +21,7 @@
 ### mkdir tmp
 - name: mkdir tmp
   file:
-    dest: ${PWD}/{{ name }}
+    path: "${PWD}/{{ name }}"
     state: directory
   with_items:
     - tmp
@@ -62,7 +62,7 @@
 ### vim
 - name:
   file:
-    dest: ~/.vim/colors
+    path: ~/.vim/colors
     state: directory
 
 - git:
