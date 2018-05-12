@@ -2,7 +2,7 @@
 
 set -e
 
-sudo xcodebuild -license
+#sudo xcodebuild -license
 
 if [ ! -f "/usr/local/bin/brew" ]; then
   echo "Install homebrew"

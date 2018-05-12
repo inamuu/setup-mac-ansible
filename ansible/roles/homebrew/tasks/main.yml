@@ -1,6 +1,13 @@
 - name: update homebrew 
   homebrew: update_homebrew=yes
 
+- name: homebrew tap
+  homebrew_tap:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - sanemat/font
+
 - name: homebrew
   homebrew: name={{ item }} state=present
   with_items:
@@ -48,13 +55,6 @@
     - ricty
     - fontforge
 
-- name: homebrew tap
-  homebrew_tap:
-    name: '{{ item }}'
-    state: present
-  with_items:
-    - sanemat/font
-
 - name: pip packages
   pip: name={{ item }}
   with_items:
@@ -88,3 +88,4 @@
     - shiftit
     - Franz
     - jasper
+    - enpass

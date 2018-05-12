@@ -21,8 +21,18 @@
 ### mkdir tmp
 - name: mkdir tmp
   file:
-    dest: ${PWD}/tmp
+    path: "${PWD}/{{ name }}"
     state: directory
+  with_items:
+    - tmp
+    - .config
+
+### karabiner
+- name: karabiner config
+  file: 
+    src: ${PWD}/roles/dotfiles/files/.config/karabiner
+    dest: ${HOME}/.config/karabiner
+    state: link
 
 ### zsh
 - name: add zsh path
@@ -39,6 +49,7 @@
 - git:
     repo: git@github.com:sorin-ionescu/prezto.git
     dest: ${HOME}/.zprezto
+    force: yes
     version: master
     accept_hostkey: yes
 
@@ -49,6 +60,11 @@
     state: link
 
 ### vim
+- name:
+  file:
+    path: ~/.vim/colors
+    state: directory
+
 - git:
     repo: git@github.com:Shougo/neobundle.vim
     dest: ${HOME}/.vim/bundle/neobundle.vim

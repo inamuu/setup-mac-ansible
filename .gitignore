@@ -2,3 +2,4 @@
 .vim/bundle/
 mac.retry
 tmp/
+ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/preferences/local/
