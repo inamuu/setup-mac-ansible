@@ -59,6 +59,8 @@
   pip: name={{ item }}
   with_items:
     - powerline-status
+    - requests-aws4auth
+    - boto
 
 - name: homebrew cask packages
   homebrew_cask:
