@@ -8,6 +8,9 @@
   with_items:
     - sanemat/font
 
+- git:
+    repo: http://git.io/sshpass.rb
+
 - name: homebrew
   homebrew: name={{ item }} state=present
   with_items:
