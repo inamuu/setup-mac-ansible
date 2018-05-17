@@ -1,6 +1,6 @@
 {
   "alfredsnippet" : {
-    "snippet" : "### ",
+    "snippet" : "### {cursor}",
     "uid" : "6F30A69C-4C3E-4416-887E-B674BC85CC3A",
     "name" : "title3",
     "keyword" : "#3"
