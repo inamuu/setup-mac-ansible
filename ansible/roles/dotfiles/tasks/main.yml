@@ -5,7 +5,7 @@
     dest: "${HOME}/{{ item }}"
     force: true
     state: link
-  with_items:
+  loop:
       - .bashrc
       - .zshrc
       - .zlogin
@@ -23,7 +23,7 @@
   file:
     path: "${PWD}/{{ name }}"
     state: directory
-  with_items:
+  loop:
     - tmp
     - .config
 
