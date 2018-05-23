@@ -5,14 +5,14 @@
   homebrew_tap:
     name: '{{ item }}'
     state: present
-  with_items:
+  loop:
     - sanemat/font
     - osx-cross/avr
     - PX4/homebrew-px4
 
 - name: homebrew
   homebrew: name={{ item }} state=present
-  with_items:
+  loop:
     - ansible
     - python
     - pyenv
@@ -63,7 +63,7 @@
 
 - name: pip packages
   pip: name={{ item }}
-  with_items:
+  loop:
     - powerline-status
     - requests-aws4auth
     - boto
@@ -74,7 +74,7 @@
     state: present
     accept_external_apps: True
     install_options: 'appdir=/Applications'
-  with_items:
+  loop:
     - firefox
     - google-chrome
     - google-japanese-ime
