@@ -1,6 +1,7 @@
 {
   "alfredsnippet" : {
     "snippet" : "{{cursor}}",
+    "dontautoexpand" : true,
     "uid" : "80B1D511-CAD3-49BD-BB24-3F4155315F91",
     "name" : "括弧{",
     "keyword" : "{"
