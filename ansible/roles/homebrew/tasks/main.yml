@@ -7,9 +7,8 @@
     state: present
   with_items:
     - sanemat/font
-
-- git:
-    repo: http://git.io/sshpass.rb
+    - osx-cross/avr
+    - PX4/homebrew-px4
 
 - name: homebrew
   homebrew: name={{ item }} state=present
@@ -57,6 +56,10 @@
     - gnu-sed
     - ricty
     - fontforge
+    - avr-gcc
+    - dfu-programmer
+    - gcc-arm-none-eabi
+    - avrdude
 
 - name: pip packages
   pip: name={{ item }}
