@@ -63,7 +63,7 @@
 
 - name: pip packages
   pip: name={{ item }}
-  loop:
+  loop: 
     - powerline-status
     - requests-aws4auth
     - boto
