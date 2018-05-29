@@ -21,11 +21,10 @@
 ### mkdir
 - name: mkdir tmp
   file:
-    path: "${PWD}/{{ name }}"
+    path: "${PWD}/{{ item }}"
     state: directory
   loop:
     - tmp
-    - .config
 
 ### karabiner
 - name: karabiner config
