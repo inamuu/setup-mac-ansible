@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "```diff\n{cursor}\n```",
+    "uid" : "D1CDC5D5-B348-4FA3-8ADA-FD8E050D74EF",
+    "name" : "markdown-diff",
+    "keyword" : "mddf"
+  }
+}
