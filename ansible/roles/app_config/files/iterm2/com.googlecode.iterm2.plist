@@ -35616,8 +35616,10 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 26 618 519 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>530 288 918 512 0 0 1920 1057 </string>
+	<string>530 249 918 512 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1920 1057 0 0 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_58E6F7F8-F26B-48B4-A7BD-2CFEC140103B</key>
@@ -35879,7 +35881,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>Yes</string>
+			<string>No</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -36362,7 +36364,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-04T03:56:19Z</date>
+	<date>2018-06-14T04:21:03Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
