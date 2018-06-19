@@ -4,3 +4,4 @@ mac.retry
 tmp/
 ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/preferences/local/
 ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/snippets/sshpass/
+ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/workflows/user.workflow.0DB978CC-263C-4C8D-A4C8-E70FD3E7BD10/`
