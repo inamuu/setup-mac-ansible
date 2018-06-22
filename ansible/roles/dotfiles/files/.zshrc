@@ -116,6 +116,7 @@ setopt HIST_IGNORE_SPACE    # 行頭がスペースのコマンドは記録し�
 setopt HIST_IGNORE_ALL_DUPS # 履歴中の重複行をファイル記録前に無くす
 setopt HIST_FIND_NO_DUPS    # 履歴検索中、(連続してなくとも)重複を飛ばす
 setopt HIST_NO_STORE        # histroyコマンドは記録しない
+setopt inc_append_history hist_ignore_dups # すぐにhistoryに書き込む
 # http://mollifier.hatenablog.com/entry/20090728/p1
 zshaddhistory() {
     local line=${1%%$'\n'} #コマンドライン全体から改行を除去したもの
