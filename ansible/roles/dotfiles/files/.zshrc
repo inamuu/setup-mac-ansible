@@ -224,6 +224,8 @@ alias gpl='git pull'
 alias gps='git push -u origin'
 alias gpsf='git push -f -u origin'
 alias github='cd ~/Github'
+alias gls='git ls-files --others --exclude-standard'
+alias gbrm="git branch --merged | grep -vE '^\*|master$|develop$' | xargs -I % git branch -d %"
 
 ### Start tmux
 [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
