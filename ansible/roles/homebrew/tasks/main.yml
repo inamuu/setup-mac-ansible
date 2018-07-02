@@ -1,4 +1,4 @@
-- name: update homebrew 
+- name: update homebrew
   homebrew: update_homebrew=yes
 
 - name: homebrew tap
@@ -63,10 +63,12 @@
 
 - name: pip packages
   pip: name={{ item }}
-  loop: 
+  loop:
     - powerline-status
     - requests-aws4auth
     - boto
+    - ansible-lint
+    - yamllint
 
 - name: homebrew cask packages
   homebrew_cask:
