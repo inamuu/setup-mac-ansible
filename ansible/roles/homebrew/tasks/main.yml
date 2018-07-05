@@ -14,52 +14,52 @@
   homebrew: name={{ item }} state=present
   loop:
     - ansible
-    - python
-    - pyenv
-    - git
-    - go
-    - htop
-    - openssl
-    - sl
-    - terraform
-    - tmux
-    - tree
-    - wget
-    - zsh
-    - zsh-completions
-    - reattach-to-user-namespace
+    - avr-gcc
+    - avrdude
     - awscli
     - cask
+    - coreutils
+    - dfu-programmer
+    - direnv
     - docker
     - docker-compose
-    - grep
-    - putty
-    - telnet
-    - tree
-    - watch
-    - w3m
-    - neovim
-    - iproute2mac
-    - peco
-    - tig
-    - ghq
-    - hub
-    - jq
-    - rbenv
-    - ruby-build
-    - sqlite
     - envchain
-    - zlib
-    - direnv
-    - macvim
-    - coreutils
-    - gnu-sed
-    - ricty
     - fontforge
-    - avr-gcc
-    - dfu-programmer
     - gcc-arm-none-eabi
-    - avrdude
+    - ghq
+    - git
+    - gnu-sed
+    - go
+    - grep
+    - htop
+    - hub
+    - iproute2mac
+    - jq
+    - macvim
+    - neovim
+    - openssl
+    - peco
+    - putty
+    - pyenv
+    - python
+    - rbenv
+    - reattach-to-user-namespace
+    - ricty
+    - ruby-build
+    - sl
+    - sqlite
+    - telnet
+    - terraform
+    - tig
+    - tmux
+    - tree
+    - tree
+    - w3m
+    - watch
+    - wget
+    - zlib
+    - zsh
+    - zsh-completions
 
 - name: pip packages
   pip: name={{ item }}
