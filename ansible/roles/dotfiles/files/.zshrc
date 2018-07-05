@@ -227,6 +227,10 @@ alias github='cd ~/Github'
 alias gls='git ls-files --others --exclude-standard'
 alias gbrm="git branch --merged | grep -vE '^\*|master$|develop$' | xargs -I % git branch -d %"
 
+### tig
+alias t='tig'
+alias ta='tig --all'
+
 ### Start tmux
 [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
 
