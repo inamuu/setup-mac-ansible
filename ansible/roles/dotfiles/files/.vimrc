@@ -48,6 +48,9 @@ syntax on
 " 以下のコマンドは :colorscheme の前に設定します
 " コメントを濃い緑にする
 autocmd ColorScheme * highlight Comment ctermfg=31 guifg=#008800
+" ビジュアルを水色にする
+autocmd ColorScheme * highlight Visual ctermfg=75 guifg=#008800
+
 " ...
 colorscheme molokai
 
