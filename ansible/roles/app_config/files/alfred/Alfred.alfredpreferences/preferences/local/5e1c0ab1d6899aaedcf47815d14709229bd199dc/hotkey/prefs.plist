@@ -7,7 +7,7 @@
 		<key>key</key>
 		<integer>-1</integer>
 		<key>mod</key>
-		<integer>262144</integer>
+		<integer>131072</integer>
 		<key>string</key>
 		<string>double tap</string>
 	</dict>
