@@ -37,6 +37,7 @@
     - jq
     - macvim
     - neovim
+    - oath-toolkit
     - openssl
     - peco
     - putty
