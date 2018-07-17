@@ -49,7 +49,7 @@ syntax on
 " コメントを濃い緑にする
 autocmd ColorScheme * highlight Comment ctermfg=31 guifg=#008800
 " ビジュアルを水色にする
-autocmd ColorScheme * highlight Visual ctermfg=75 guifg=#008800
+autocmd ColorScheme * highlight Visual ctermfg=99 guifg=99
 
 " ...
 colorscheme molokai

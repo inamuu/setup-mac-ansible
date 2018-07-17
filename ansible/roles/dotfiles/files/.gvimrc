@@ -2,6 +2,8 @@ set nobackup
 set noswapfile
 
 syntax on
+" ビジュアルを水色にする
+autocmd ColorScheme * highlight Visual ctermfg=99 guifg=99
 colorscheme molokai
 set guifont=RictyForPowerline-Regular:h16
 
