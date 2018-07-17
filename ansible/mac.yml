@@ -3,3 +3,4 @@
   roles:
     - homebrew
     - dotfiles
+    - cli_tools
