@@ -5,5 +5,12 @@ tmp/
 ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/preferences/local/
 ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/snippets/sshpass/
 ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/snippets/lancers/
+
+## Mackerel
 ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/workflows/user.workflow.0DB978CC-263C-4C8D-A4C8-E70FD3E7BD10/
+
+## MFA
 ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/workflows/user.workflow.AD4EE8AD-A7B9-4004-9211-674C7DCEACF8/
+
+## LGTM(一時的に生成される画像ファイル)
+ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/workflows/user.workflow.5581DDCE-5FBD-430E-B848-41DD8039D349/thumb/icon.jpg
