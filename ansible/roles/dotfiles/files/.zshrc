@@ -131,7 +131,7 @@ zshaddhistory() {
     ]]
 }
 
- 
+
 autoload -Uz compinit
 compinit -u
 
@@ -149,7 +149,7 @@ setopt hist_ignore_dups
 #POWERLINE_HIDE_USER_NAME="true"
 #POWERLINE_HIDE_GIT_PROMPT_STATUS="true"
 
-### brew 
+### brew
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 ### peco&ssh
@@ -213,19 +213,19 @@ alias ssh='TERM=xterm ssh'
 
 ### git
 alias g='git'
-alias gs='git status'
+alias ga='git add'
 alias gb='git branch'
 alias gc='git checkout'
-alias gcm='git commit'
 alias gd='git diff'
 alias gl='git log'
-alias ga='git add'
+alias gs='git status'
+alias gcm='git commit'
+alias gls='git ls-files --others --exclude-standard'
 alias gpl='git pull'
 alias gps='git push -u origin'
 alias gpsf='git push -f -u origin'
-alias github='cd ~/Github'
-alias gls='git ls-files --others --exclude-standard'
 alias gbrm="git branch --merged | grep -vE '^\*|master$|develop$' | xargs -I % git branch -d %"
+alias github='cd ~/Github'
 
 ### tig
 alias t='tig'
