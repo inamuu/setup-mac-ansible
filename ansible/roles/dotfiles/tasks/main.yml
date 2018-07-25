@@ -20,6 +20,17 @@
       - .commit_template
       - .gitconfig
 
+### .git template
+- name: copy .git_template
+  tags: dotfiles
+  file:
+    src: "${PWD}/roles/dotfiles/files/.git_template/hooks/{{ item }}"
+    dest: "${HOME}/.git_temaplte/hooks/{{ item }}"
+    force: true
+    state: link
+  loop:
+    - pre-push
+
 ### mkdir
 - name: mkdir tmp
   file:
@@ -30,7 +41,7 @@
 
 ### karabiner
 - name: karabiner config
-  file: 
+  file:
     src: ${PWD}/roles/dotfiles/files/.config/karabiner
     dest: ${HOME}/.config/karabiner
     state: link
