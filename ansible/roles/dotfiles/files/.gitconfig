@@ -3,3 +3,5 @@
 	email = kzm0211@gmail.com
 [ghq]
   root = ~/Github
+[commit]
+  template = ~/.commit_template
