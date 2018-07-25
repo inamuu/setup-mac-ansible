@@ -1,5 +1,6 @@
 ### dotfiles
 - name: setup dotfiles
+  tags: dotfiles
   file:
     src: "${PWD}/roles/dotfiles/files/{{ item }}"
     dest: "${HOME}/{{ item }}"
@@ -14,6 +15,7 @@
       - .zpreztorc
       - .vimrc
       - .gvimrc
+      - .tigrc
       - .tmux.conf
       - .commit_template
       - .gitconfig
