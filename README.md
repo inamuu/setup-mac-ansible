@@ -3,7 +3,7 @@
 ### Install homebrew and ansible
 
 ```sh
-sh init.sh
+sh setup.sh
 ```
 
 ### Dryrun ansible
