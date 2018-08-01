@@ -232,15 +232,18 @@ alias github='cd ~/Github'
 alias t='tig'
 alias ta='tig --all'
 
-### Start tmux
+### tmux
 [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+
+alias tm='tmux'
+alias tmk='tmux kill-server'
 
 ### bundle
 alias be='bundle exec'
 alias ber='bundle exec rake'
 
 ### ghq
-alias gh='cd $(ghq root)/$(ghq list | peco)'
+alias gh='ghq look $(ghq list | peco)'
 
 ### Python
 export PYENV_ROOT="$HOME/.pyenv"
