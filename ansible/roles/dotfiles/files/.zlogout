@@ -5,8 +5,6 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-tmux kill-server
-
 # Print the message.
 cat <<-EOF
   (^_^)/~
