@@ -4,7 +4,7 @@ parse_git_branch(){
 }
 
 NAME="inamuu"
-export PS1="\[\e[36m\][$HOSTNAME \[\e[31m\]\W\[\e[36m\] ]\[\e[0;36m\]\$(parse_git_branch) \e[0;32m\]\\$ \[\e[0;00m\]"
+#export PS1="\[\e[36m\][$HOSTNAME \[\e[31m\]\W\[\e[36m\] ]\[\e[0;36m\]\$(parse_git_branch) \e[0;32m\]\\$ \[\e[0;00m\]"
 export TERM=xterm-256color
 
 ## history
