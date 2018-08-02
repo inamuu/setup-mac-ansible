@@ -41,4 +41,11 @@ PATH=~/.rbenv/shims:"$PATH"
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 
-#eval "$(direnv hook zsh)"
+##eval "$(direnv hook zsh)"
+
+## ssh
+msh () {
+  local host=$(cat /etc/ssh/ssh_config | awk '/Host / && ! /\*|github.com/ {print $2}' | peco)
+  ssh $host
+}
+
