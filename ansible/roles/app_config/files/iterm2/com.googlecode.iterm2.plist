@@ -35607,6 +35607,11 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 263.000000, NO, NO</string>
+		<string>0.000000, 264.000000, 224.000000, 43.000000, NO, NO</string>
+	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -35640,7 +35645,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 26 618 519 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1149 330 796 486 -1920 -30 1920 1057 </string>
+	<string>-1149 365 796 486 -1920 -30 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>-1920 -7 1920 1034 -1920 -30 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_58E6F7F8-F26B-48B4-A7BD-2CFEC140103B</key>
@@ -36299,6 +36304,29 @@
 			<integer>1</integer>
 			<key>Transparency</key>
 			<real>0.045685279187817257</real>
+			<key>Triggers</key>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>Password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>パスワード:</string>
+				</dict>
+			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -37000,6 +37028,29 @@
 			<integer>1</integer>
 			<key>Transparency</key>
 			<real>0.29999999999999999</real>
+			<key>Triggers</key>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>Password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>パスワード:</string>
+				</dict>
+			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
