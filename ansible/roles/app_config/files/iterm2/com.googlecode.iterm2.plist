@@ -35640,14 +35640,18 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame ProfilesPanel</key>
+	<string>-1136 645 735 382 -1920 -30 1920 1080 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 498 620 392 0 0 1920 1057 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 26 618 519 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1149 365 796 486 -1920 -30 1920 1057 </string>
+	<string>-1149 393 937 464 -1920 -30 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1920 -7 1920 1034 -1920 -30 1920 1057 </string>
+	<string>-1920 -30 1920 1080 -1920 -30 1920 1057 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>-1673 77 570 402 -1920 -30 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_58E6F7F8-F26B-48B4-A7BD-2CFEC140103B</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_58E6F7F8-F26B-48B4-A7BD-2CFEC140103B_selection</key>
@@ -35929,8 +35933,34 @@
 			</dict>
 			<key>Guid</key>
 			<string>58E6F7F8-F26B-48B4-A7BD-2CFEC140103B</string>
+			<key>Has Hotkey</key>
+			<true/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>HotKey Activated By Modifier</key>
+			<true/>
+			<key>HotKey Alternate Shortcuts</key>
+			<array/>
+			<key>HotKey Characters</key>
+			<string></string>
+			<key>HotKey Characters Ignoring Modifiers</key>
+			<string></string>
+			<key>HotKey Key Code</key>
+			<integer>0</integer>
+			<key>HotKey Modifier Activation</key>
+			<integer>0</integer>
+			<key>HotKey Modifier Flags</key>
+			<integer>0</integer>
+			<key>HotKey Window Animates</key>
+			<true/>
+			<key>HotKey Window AutoHides</key>
+			<false/>
+			<key>HotKey Window Dock Click Action</key>
+			<integer>0</integer>
+			<key>HotKey Window Floats</key>
+			<true/>
+			<key>HotKey Window Reopens On Activation</key>
+			<false/>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>
@@ -36259,7 +36289,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>Scrollback Lines</key>
 			<integer>3000</integer>
 			<key>Scrollback With Status Bar</key>
@@ -36628,7 +36658,7 @@
 			<key>Guid</key>
 			<string>391CE81F-75B4-4476-B2B8-BF7C27CB00C9</string>
 			<key>Has Hotkey</key>
-			<true/>
+			<false/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>HotKey Activated By Modifier</key>
@@ -36648,7 +36678,7 @@
 			<key>HotKey Window Animates</key>
 			<true/>
 			<key>HotKey Window AutoHides</key>
-			<true/>
+			<false/>
 			<key>HotKey Window Dock Click Action</key>
 			<integer>0</integer>
 			<key>HotKey Window Floats</key>
@@ -37050,6 +37080,16 @@
 					<key>regex</key>
 					<string>パスワード:</string>
 				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string></string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>\[sudo\] password for</string>
+				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
@@ -37167,7 +37207,7 @@
 	<key>UseBorder</key>
 	<false/>
 	<key>UseLionStyleFullscreen</key>
-	<false/>
+	<true/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
