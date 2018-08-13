@@ -35579,8 +35579,16 @@
 	<true/>
 	<key>HideTabCloseButton</key>
 	<true/>
+	<key>Hotkey</key>
+	<true/>
+	<key>HotkeyChar</key>
+	<integer>32</integer>
+	<key>HotkeyCode</key>
+	<integer>49</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>HotkeyModifiers</key>
+	<integer>524288</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>Mark Alert Action</key>
@@ -35627,9 +35635,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 26 618 519 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1469 536 918 452 -1920 -30 1920 1057 </string>
+	<string>-1469 536 796 473 -1920 -30 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1920 -30 1920 1080 -1920 -30 1920 1057 </string>
+	<string>-1920 -30 1920 1057 -1920 -30 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_58E6F7F8-F26B-48B4-A7BD-2CFEC140103B</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_58E6F7F8-F26B-48B4-A7BD-2CFEC140103B_selection</key>
@@ -36310,6 +36318,8 @@
 			<string>/Users/$USER/Downloads</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -36380,7 +36390,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-01T00:15:29Z</date>
+	<date>2018-08-07T01:17:21Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
