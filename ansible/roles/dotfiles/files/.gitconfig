@@ -7,3 +7,5 @@
   root = ~/www
 [commit]
   template = ~/.commit_template
+[core]
+	editor = vim

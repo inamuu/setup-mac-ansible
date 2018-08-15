@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "<img src=\"{cursor}\" width=\"320px\">\n\n",
-    "uid" : "BFE32257-3231-4D9D-8A75-9223A0B93AE4",
-    "name" : "mdimg",
-    "keyword" : "mdimg"
-  }
-}
