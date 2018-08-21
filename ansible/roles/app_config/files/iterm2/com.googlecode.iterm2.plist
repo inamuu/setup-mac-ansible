@@ -35647,9 +35647,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 26 618 519 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1149 629 928 394 -1920 -30 1920 1057 </string>
+	<string>-1149 485 918 512 -1920 -30 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-570 84 570 402 -1920 -30 1920 1057 </string>
+	<string>-1920 671 1920 379 -1920 -30 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-1673 77 570 402 -1920 -30 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_58E6F7F8-F26B-48B4-A7BD-2CFEC140103B</key>
@@ -36344,11 +36344,11 @@
 					<key>action</key>
 					<string>PasswordTrigger</string>
 					<key>parameter</key>
-					<string></string>
+					<string>End scripts</string>
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
-					<string>Password:</string>
+					<string></string>
 				</dict>
 				<dict>
 					<key>action</key>
@@ -36359,6 +36359,14 @@
 					<true/>
 					<key>regex</key>
 					<string>パスワード:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>AlertTrigger</string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>Notify iterm</string>
 				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
@@ -37233,7 +37241,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-13T00:08:58Z</date>
+	<date>2018-08-20T00:25:19Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>

@@ -102,6 +102,10 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+### cutom variables
+export USER=inamuu
+export USERNAME=inamuu
+
 export LANG=ja_JP.UTF-8
 setopt print_eight_bit
 setopt auto_cd
