@@ -271,6 +271,7 @@ alias vags='vagrant ssh'
 ### docker
 alias do='docker'
 alias doc='docker-compose'
+alias dopsn="docker ps | awk '{print \$NF}' | tail +2"
 
 ### gcloud
 # The next line enables shell command completion for gcloud.
