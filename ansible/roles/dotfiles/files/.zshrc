@@ -197,13 +197,6 @@ PATH=~/.rbenv/shims:"$PATH"
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 
-### vagrant
-alias vag='vagrant'
-alias vagg='vagrant global-status'
-alias vagu='vagrant up'
-alias vagh='vagrant halt'
-alias vags='vagrant ssh'
-
 ### docker
 alias do='docker'
 alias doc='docker-compose'
