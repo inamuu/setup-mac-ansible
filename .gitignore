@@ -14,3 +14,6 @@ ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/workflows/user.wo
 
 ## LGTM(一時的に生成される画像ファイル)
 ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/workflows/user.workflow.5581DDCE-5FBD-430E-B848-41DD8039D349/thumb/icon.jpg
+
+## Emoji Pack
+ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/snippets/Emoji Pack/
