@@ -6,5 +6,7 @@
 	<false/>
 	<key>persistFor</key>
 	<integer>0</integer>
+	<key>snippetKeyword</key>
+	<string>s </string>
 </dict>
 </plist>
