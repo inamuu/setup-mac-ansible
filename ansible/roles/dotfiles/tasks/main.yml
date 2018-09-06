@@ -21,6 +21,10 @@
       - .gitconfig
 
 ### .git template
+- name: create git_template directory
+  tags: dotfiles
+  file: path="${HOME}/.git_template/hooks" state=directory
+
 - name: copy .git_template
   tags: dotfiles
   file:
