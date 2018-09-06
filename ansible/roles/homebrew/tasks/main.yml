@@ -14,8 +14,8 @@
   homebrew: name={{ item }} state=present
   loop:
     - ansible
-    - avr-gcc
-    - avrdude
+    #- avr-gcc
+    #- avrdude
     - awscli
     - cask
     - coreutils
@@ -86,7 +86,7 @@
     - slack
     - chatwork
     - iterm2
-    - virtualbox
+    #- virtualbox
     - skitch
     - alfred
     - skype
