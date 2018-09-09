@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "git branch --merged | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %",
-    "uid" : "042C53B7-5259-45DA-A391-097F6220E5FD",
-    "name" : "gbrm",
-    "keyword" : "gbrm"
-  }
-}

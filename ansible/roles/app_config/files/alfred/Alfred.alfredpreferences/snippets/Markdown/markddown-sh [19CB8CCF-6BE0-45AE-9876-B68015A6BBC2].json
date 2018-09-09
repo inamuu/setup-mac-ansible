@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "```sh\n{cursor}\n```",
-    "uid" : "19CB8CCF-6BE0-45AE-9876-B68015A6BBC2",
-    "name" : "markddown-sh",
-    "keyword" : "mdsh"
-  }
-}

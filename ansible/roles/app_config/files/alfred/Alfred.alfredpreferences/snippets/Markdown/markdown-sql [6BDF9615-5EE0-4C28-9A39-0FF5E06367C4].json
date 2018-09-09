@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "```sql\n{cursor}\n```",
-    "uid" : "6BDF9615-5EE0-4C28-9A39-0FF5E06367C4",
-    "name" : "markdown-sql",
-    "keyword" : "mdsql"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "[blogcard url={cursor}]",
-    "dontautoexpand" : true,
-    "uid" : "811F87AC-7482-4C64-AA50-01D97E2B2E97",
-    "name" : "blogcard",
-    "keyword" : "blogcard"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "[code lang=bash]\n{cursor}\n[\/code]",
-    "dontautoexpand" : true,
-    "uid" : "2854C748-684C-41F1-9323-DBBEBB3B0579",
-    "name" : "code-shell",
-    "keyword" : "code"
-  }
-}

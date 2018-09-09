@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "```console\n{cursor}\n```",
-    "uid" : "47413074-5DD0-4F1B-B53B-E598F1DA9B11",
-    "name" : "markdown-console",
-    "keyword" : "mdcon"
-  }
-}

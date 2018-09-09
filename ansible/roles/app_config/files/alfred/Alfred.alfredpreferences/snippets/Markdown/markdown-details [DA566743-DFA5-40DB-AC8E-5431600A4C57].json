@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "<details>\n<summary>{cursor}<\/summary>\n\n<\/details>\n",
-    "uid" : "DA566743-DFA5-40DB-AC8E-5431600A4C57",
-    "name" : "markdown-details",
-    "keyword" : "mdde"
-  }
-}
