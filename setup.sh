@@ -15,4 +15,6 @@ brew update
 
 if [ ! -f "/usr/local/bin/ansible" ]; then
   brew install ansible
+else
+  echo "Already installed ansible"
 fi
