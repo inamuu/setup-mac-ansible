@@ -60,7 +60,7 @@
 
 - name: change shell to zsh
   become: True
-  command: chsh -s '/usrlocal/bin/zsh'
+  command: chsh -s '/usr/local/bin/zsh'
 
 - git:
     repo: git@github.com:sorin-ionescu/prezto.git
