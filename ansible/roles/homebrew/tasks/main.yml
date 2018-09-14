@@ -37,6 +37,7 @@
     - jq
     - macvim
     - neovim
+    - nodebrew
     - oath-toolkit
     - openssl
     - peco
