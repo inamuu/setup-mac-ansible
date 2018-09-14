@@ -22,7 +22,7 @@ alias history="history 0"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.nodebrew/current/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 #source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
