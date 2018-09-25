@@ -1,0 +1,8 @@
+### genfiles
+- name: Install gemfiles 
+  tags: gem
+  gem:
+    name: "{{ item }}"
+  loop:
+      - furik
+
