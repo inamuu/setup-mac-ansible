@@ -67,15 +67,14 @@ compinit -u
 
 ### History
 alias history="history 0"
-setopt hist_ignore_dups                    # 前と重複する行は記録しない
-setopt share_history                       # 同時に起動したzshの間でヒストリを共有する
 setopt hist_reduce_blanks                  # 余分なスペースを削除してヒストリに保存する
-setopt HIST_IGNORE_SPACE                   # 行頭がスペースのコマンドは記録しない
-setopt HIST_IGNORE_ALL_DUPS                # 履歴中の重複行をファイル記録前に無くす
-setopt HIST_FIND_NO_DUPS                   # 履歴検索中、(連続してなくとも)重複を飛ばす
-setopt HIST_NO_STORE                       # histroyコマンドは記録しない
-setopt inc_append_history hist_ignore_dups # すぐにhistoryに書き込む
+setopt hist_find_no_dups                   # 履歴検索中、(連続してなくとも)重複を飛ばす
+setopt hist_ignore_space                   # 行頭がスペースのコマンドは記録しない
 setopt hist_ignore_all_dups                # ヒストリに追加されるコマンド行が古いものと同じなら古いものを削除
+setopt hist_ignore_dups                    # 直前と同じコマンドは履歴に追加しない
+setopt hist_no_store                       # histroyコマンドは記録しない
+setopt share_history                       # 同時に起動したzshの間でヒストリを共有する
+setopt inc_append_history                  # すぐにhistoryに書き込む
 
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
