@@ -87,7 +87,8 @@ function history-all { history -E 1 }
 
 function peco-history-selection() {
     #BUFFER=`history | tail -r | awk '{$1="";print $0}' | peco`
-    BUFFER=`history | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | peco`
+    BUFFER=`history | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | peco --layout bottom-up`
+    #BUFFER=`history | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | fzf`
     CURSOR=$#BUFFER
     zle reset-prompt
 }
@@ -115,7 +116,7 @@ function peco-ssh () {
       }
     }
   }
-  ' ~/.ssh/conf.d/*/config | sort | peco --query "$LBUFFER")
+  ' ~/.ssh/conf.d/*/config | sort | peco --layout bottom-up --query "$LBUFFER")
   if [ -n "$selected_host" ]; then
     BUFFER="ssh -A ${selected_host}"
     zle accept-line
@@ -186,7 +187,7 @@ alias be='bundle exec'
 alias ber='bundle exec rake'
 
 ### ghq
-alias gh='ghq look $(ghq list | peco)'
+alias gh='ghq look $(ghq list | peco --layout bottom-up)'
 
 ### Python
 export PYENV_ROOT="$HOME/.pyenv"
