@@ -38,16 +38,23 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.nodebrew/current/bin:$PATH
 ### cutom variables
 export USER=inamuu
 export USERNAME=inamuu
-
 export LANG=ja_JP.UTF-8
-setopt print_eight_bit
-setopt auto_cd
-setopt no_beep
-setopt nolistbeep
-setopt auto_pushd
-setopt pushd_ignore_dups
 
-# http://mollifier.hatenablog.com/entry/20090728/p1
+### ref: http://oomatomo.hatenablog.com/entry/36401841
+setopt print_eight_bit   # 日本語ファイル名を表示可能にする
+setopt correct           # コマンドのスペルを訂正する
+setopt auto_cd           # ディレクトリ名のみ入力時、cdを適応させる
+setopt no_beep           # ビープ音を鳴らさない
+setopt nolistbeep        # 補完候補表示時にビープ音を鳴らさない
+setopt auto_pushd        # cd実行時、ディレクトリスタックにpushされる
+setopt pushd_ignore_dups # ディレクトリスタックに重複する物は古い方を削除
+setopt list_packed       # 補完結果をできるだけ詰める
+
+### 補完機能を有効にする
+autoload -Uz compinit
+compinit -u
+
+### ref:http://mollifier.hatenablog.com/entry/20090728/p1
 zshaddhistory() {
     local line=${1%%$'\n'} #コマンドライン全体から改行を除去したもの
     local cmd=${line%% *}  # １つ目のコマンド
@@ -60,10 +67,6 @@ zshaddhistory() {
         && ${cmd} != (terraform apply)
     ]]
 }
-
-
-autoload -Uz compinit
-compinit -u
 
 ### History
 alias history="history 0"
