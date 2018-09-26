@@ -3,8 +3,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-alias history="history 0"
-
 #export ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="agnoster"
@@ -68,6 +66,7 @@ autoload -Uz compinit
 compinit -u
 
 ### History
+alias history="history 0"
 setopt hist_ignore_dups     # 前と重複する行は記録しない
 setopt share_history        # 同時に起動したzshの間でヒストリを共有する
 setopt hist_reduce_blanks   # 余分なスペースを削除してヒストリに保存する
