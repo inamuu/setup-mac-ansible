@@ -204,7 +204,9 @@ export PATH=$PATH:$GOPATH/bin
 ### docker
 alias do='docker'
 alias doc='docker-compose'
-alias dopsn='docker ps | awk "{print $NF}" | tail +2'
+alias -g P='$(docker ps | tail -n +2 | peco --layout bottom-up | cut -d" " -f1)'
+alias -g PA='$(docker ps -a | tail -n +2 | peco --layout bottom-up | cut -d" " -f1)'
+alias -g PI='$(docker images | tail -n +2 | peco --layout bottom-up | cut -d" " -f1)'
 
 ### gcloud
 # The next line enables shell command completion for gcloud.
