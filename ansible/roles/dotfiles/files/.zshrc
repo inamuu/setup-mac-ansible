@@ -78,8 +78,8 @@ setopt inc_append_history hist_ignore_dups # すぐにhistoryに書き込む
 setopt hist_ignore_all_dups                # ヒストリに追加されるコマンド行が古いものと同じなら古いものを削除
 
 HISTFILE=~/.zsh_history
-HISTSIZE=300000
-SAVEHIST=300000
+HISTSIZE=1000000
+SAVEHIST=1000000
 HIST_STAMPS="yyyy/mm/dd"
 function history-all { history -E 1 }
 
