@@ -9,3 +9,5 @@
   template = ~/.commit_template
 [core]
 	editor = vim
+[fetch]
+  prune = true
