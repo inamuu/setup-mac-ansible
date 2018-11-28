@@ -204,6 +204,7 @@ export PATH=$PATH:$GOPATH/bin
 ### docker
 alias do='docker'
 alias doc='docker-compose'
+alias dorminone='do rmi -f $(do images | grep none | awk "{print $3}")'
 alias -g P='$(docker ps | tail -n +2 | peco --layout bottom-up | cut -d" " -f1)'
 alias -g PA='$(docker ps -a | tail -n +2 | peco --layout bottom-up | cut -d" " -f1)'
 alias -g PI='$(docker images | tail -n +2 | peco --layout bottom-up | awk '\''{print $3}'\'')'
