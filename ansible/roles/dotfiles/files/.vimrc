@@ -62,7 +62,7 @@ set noautoindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
-"set fileencodings=iso-2022-jp,euc-jp,utf-8,sjis
+" set fileencodings=iso-2022-jp,euc-jp,utf-8,sjis
 set fileformats=unix,dos,mac
 autocmd FileType * setlocal formatoptions-=r
 autocmd FileType * setlocal formatoptions-=o
@@ -71,11 +71,11 @@ set noswapfile
 set noundofile
 " set browsedir=~/Documents
 
-"VimFiler
+" VimFiler
 let g:vimfiler_as_default_explorer = 1
 
 autocmd FileType vimfiler nmap <buffer> <CR> <Plug>(vimfiler_expand_or_edit)
-"autocmd VimEnter * VimFiler -split -simple -winwidth=30 -no-quit
+" autocmd VimEnter * VimFiler -split -simple -winwidth=30 -no-quit
 command Vf VimFiler -split -simple -winwidth=30 -no-quit
 
 let g:vimfiler_safe_mode_by_default=0
@@ -85,7 +85,7 @@ let g:netrw_altv = 1
 let g:netrw_alto = 1
 let g:netrw_winsize = 80
 
-"Indent
+" Indent
 let g:indent_guides_enable_on_vim_startup=0
 let g:indent_guides_start_level=2
 let g:indent_guides_auto_colors=0
@@ -94,10 +94,10 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgr
 let g:indent_guides_color_change_percent = 30
 let g:indent_guides_guide_size = 0
 
-"puppet syntax check
+" puppet syntax check
 let g:puppet_align_hashes = 1
 
-"ruby syntax check
+" ruby syntax check
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead Berksfile set filetype=ruby
@@ -121,20 +121,20 @@ let g:lightline = {
       \ 'subseparator': {  'left': "\u2b81", 'right': "\u2b83" }
       \ }
 
-"bug fix
+" bug fix
 set nocompatible
 set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 
-"vim-terraform
+" vim-terraform
 let g:terraform_align=1
 let g:terraform_fmt_on_save = 1
 
-"Previm
+" Previm
 au BufRead,BufNewFile *.md set filetype=markdown
 nnoremap <silent> <C-p> :PrevimOpen<CR> " Ctrl-pでプレビュー
 
-"memolist
+" memolist
 map <Leader>mn  :MemoNew<CR>
 map <Leader>ml  :MemoList<CR>
 map <Leader>mg  :MemoGrep<CR>
