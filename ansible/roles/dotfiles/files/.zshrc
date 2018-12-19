@@ -63,7 +63,7 @@ zshaddhistory() {
         && ${cmd} != (l|l[sal])
         && ${cmd} != (cd)
         && ${cmd} != (m|man)
-        && ${cmd} != (r[mr])
+        #&& ${cmd} != (r[mr])
         && ${cmd} != (terraform apply)
     ]]
 }
