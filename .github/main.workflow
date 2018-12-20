@@ -1,9 +1,9 @@
 workflow "Test workflow" {
   on = "push"
-  resolves = "shell"
+  resolves = ["aws cli help"]
 }
 
-action "shell" {
-  uses = "actions/bin/sh@master"
-  args = "\"echo\", \"'Hello World!!'\""
+action "aws cli help" {
+  uses = "actions/aws/cli@8d31870"
+  args = "aws help"
 }
