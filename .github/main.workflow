@@ -1,15 +1,15 @@
 workflow "Test workflow" {
   on = "push"
   resolves = [
-    "1_HelloWorld",
     "ruby",
     "TestShell"
   ]
 }
 
 action "1_HelloWorld" {
-  uses = "actions/aws/cli@8d31870"
-  runs = [ "printf", "HelloWorld" ]
+  needs = "TestShell"
+  uses  = "actions/aws/cli@8d31870"
+  runs  = [ "printf", "HelloWorld" ]
 }
 
 action "0_Shell" {
