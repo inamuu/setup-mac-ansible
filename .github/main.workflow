@@ -1,9 +1,9 @@
 workflow "Test workflow" {
   on = "push"
-  resolves = ["Hello World"]
+  resolves = "shell"
 }
 
-action "Shell" {
+action "shell" {
   uses = "actions/bin/sh@master"
-  args = ["ls -ltr"]
+  args = "ls -ltr"
 }
