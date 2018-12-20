@@ -2,7 +2,8 @@ workflow "Test workflow" {
   on = "push"
   resolves = [
     "1_HelloWorld",
-    "ruby"
+    "ruby",
+    "TestShell"
   ]
 }
 
@@ -26,4 +27,9 @@ action "ruby" {
   needs = "nginx"
   uses  = "docker://ruby:latest"
   runs  = "ruby -v"
+}
+
+action "TestShell" {
+  uses = "actions/bin/sh@master"
+  run  = "/bin/echo $TESTMESSAGE"
 }
