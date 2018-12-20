@@ -6,12 +6,12 @@ workflow "Test workflow" {
   ]
 }
 
-action "HelloWorld" {
+action "1_HelloWorld" {
   uses = "actions/aws/cli@8d31870"
   runs = [ "printf", "HelloWorld" ]
 }
 
-action "Shell" {
+action "0_Shell" {
   uses = "actions/bin/sh@master"
   args = ["ls -ltr"]
 }
