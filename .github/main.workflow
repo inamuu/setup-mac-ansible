@@ -5,5 +5,5 @@ workflow "Test workflow" {
 
 action "shell" {
   uses = "actions/bin/sh@master"
-  args = "ls -ltr"
+  args = "\"ls\" \"-ltr\""
 }
