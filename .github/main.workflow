@@ -2,7 +2,7 @@ workflow "Test workflow" {
   on = "push"
   resolves = [
     "HelloWorld",
-    "Shell"
+    "nginx"
   ]
 }
 
