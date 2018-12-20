@@ -5,8 +5,5 @@ workflow "Test workflow" {
 
 action "aws cli help" {
   uses = "actions/aws/cli@8d31870"
-  args = [
-    "aws",
-    "help"
-  ]
+  runs = "aws help"
 }
