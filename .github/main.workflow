@@ -1,6 +1,6 @@
 workflow "Test workflow" {
   on = "push"
-  resolves = ["aws cli help"]
+  resolves = ["HelloWorld"]
 }
 
 action "HelloWorld" {
