@@ -5,5 +5,5 @@ workflow "Test workflow" {
 
 action "aws cli help" {
   uses = "actions/aws/cli@8d31870"
-  runs = "printf 'Hello World'"
+  runs = "printf \"Hello World\""
 }
