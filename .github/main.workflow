@@ -17,7 +17,7 @@ action "0_Shell" {
 }
 
 action "nginx" {
-  needs = "Shell"
+  needs = "0_Shell"
   uses  = "docker://nginx:latest"
   runs  = "nginx -t"
 }
