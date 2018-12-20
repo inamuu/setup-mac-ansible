@@ -1,7 +1,7 @@
 workflow "Test workflow" {
   on = "push"
   resolves = [
-    "HelloWorld",
+    "1_HelloWorld",
     "nginx"
   ]
 }
