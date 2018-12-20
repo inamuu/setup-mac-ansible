@@ -3,7 +3,7 @@ workflow "Test workflow" {
   resolves = [
     "HelloWorld",
     "Shell"
-    ]
+  ]
 }
 
 action "HelloWorld" {
@@ -14,4 +14,10 @@ action "HelloWorld" {
 action "Shell" {
   uses = "actions/bin/sh@master"
   args = ["ls -ltr"]
+}
+
+action "nginx" {
+  needs = "Shell"
+  uses  = "docker://nginx:latest"
+  runs  = "nginx -t"
 }
