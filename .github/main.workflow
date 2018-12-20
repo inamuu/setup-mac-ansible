@@ -31,5 +31,5 @@ action "ruby" {
 
 action "TestShell" {
   uses = "actions/bin/sh@master"
-  run  = "/bin/echo $TESTMESSAGE"
+  runs = "/bin/echo $TESTMESSAGE"
 }
