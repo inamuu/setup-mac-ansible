@@ -1,12 +1,9 @@
 workflow "Test workflow" {
   on = "push"
-  resolves = ["Hello World"]
+  resolves = "shell"
 }
 
-action "Hello World" {
-  uses = "./action-a"
-  env = {
-    MY_NAME = "Mona"
-  }
-  args = "\"Hello world, I'm $MY_NAME!\""
+action "shell" {
+  uses = "actions/bin/sh@master"
+  args = "ls -ltr"
 }
