@@ -46,8 +46,8 @@ NeoBundleCheck
 
 syntax on
 " 以下のコマンドは :colorscheme の前に設定します
-" コメントを濃い緑にする
-autocmd ColorScheme * highlight Comment ctermfg=239 ctermbg=247
+" コメントの色を変える
+autocmd ColorScheme * highlight Comment ctermfg=69
 " ビジュアルを水色にする
 autocmd ColorScheme * highlight Visual ctermfg=196 ctermbg=223
 
