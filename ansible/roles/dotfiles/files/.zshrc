@@ -86,9 +86,8 @@ HIST_STAMPS="yyyy/mm/dd"
 function history-all { history -E 1 }
 
 function peco-history-selection() {
-    #BUFFER=`history | tail -r | awk '{$1="";print $0}' | peco`
-    BUFFER=`history | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | peco --layout bottom-up`
-    #BUFFER=`history | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | fzf`
+    BUFFER=$(history | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | peco)
+    #BUFFER=`history | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | peco --layout bottom-up`
     CURSOR=$#BUFFER
     zle reset-prompt
 }
@@ -116,7 +115,8 @@ function peco-ssh () {
       }
     }
   }
-  ' ~/.ssh/conf.d/*/config | sort | peco --layout bottom-up --query "$LBUFFER")
+  ' ~/.ssh/conf.d/*/config | sort | peco --query "$LBUFFER")
+  #' ~/.ssh/conf.d/*/config | sort | peco --layout bottom-up --query "$LBUFFER")
   if [ -n "$selected_host" ]; then
     BUFFER="ssh -A ${selected_host}"
     zle accept-line
