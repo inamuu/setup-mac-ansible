@@ -12,8 +12,10 @@ export HISTIGNORE="history*:ls -la*"
 export HISTTIMEFORMAT='%Y%m%d %T '
 
 ## bash command
-alias ls='ls -lG --color=auto'
-alias ll='ls -laG --color=auto'
+alias ls='ls -lG'
+#alias ls='ls -lG --color=auto'
+alias ll='ls -laG'
+#alias ll='ls -laG --color=auto'
 alias rm='rm -vi'
 alias mv='mv -vi'
 alias cp='cp -vi'
