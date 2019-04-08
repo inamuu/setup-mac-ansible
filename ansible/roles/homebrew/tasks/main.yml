@@ -79,25 +79,26 @@
     accept_external_apps: True
     install_options: 'appdir=/Applications'
   loop:
+    - Franz
+    - alfred
+    - chatwork
+    - clipy
+    - cyberduck
+    - enpass
     - firefox
+    - gitify
     - google-chrome
     - google-japanese-ime
+    - iterm2
+    - jasper
     - karabiner
     - karabiner-elements
-    - slack
-    - chatwork
-    - iterm2
-    #- virtualbox
-    - skitch
-    - alfred
-    - skype
-    - messenger
-    - cyberduck
     - macdown
-    - thunderbird
-    - clipy
-    - visual-studio-code
+    - messenger
     - shiftit
-    - Franz
-    - jasper
-    - enpass
+    - skitch
+    - skype
+    - slack
+    - thunderbird
+    - virtualbox
+    - visual-studio-code
