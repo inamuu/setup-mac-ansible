@@ -6,6 +6,7 @@
     name: '{{ item }}'
     state: present
   loop:
+    - caskroom/fonts
     - sanemat/font
     - osx-cross/avr
     - PX4/homebrew-px4
