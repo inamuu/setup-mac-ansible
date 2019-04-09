@@ -2,8 +2,7 @@
 	name = inamuu
 	email = 8310973+inamuu@users.noreply.github.com
 [ghq]
-  root = ~/Github
-  root = ~/Gitlab
+  root = ~/.ghq
   root = ~/www
 [commit]
   template = ~/.commit_template
