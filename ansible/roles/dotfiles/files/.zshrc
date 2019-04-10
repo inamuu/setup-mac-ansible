@@ -43,7 +43,7 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.nodebrew/current/bin:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-### cutom variables
+### custom variables
 export USER=inamuu
 export USERNAME=inamuu
 export LANG=ja_JP.UTF-8
@@ -57,6 +57,9 @@ setopt nolistbeep        # 補完候補表示時にビープ音を鳴らさな�
 setopt auto_pushd        # cd実行時、ディレクトリスタックにpushされる
 setopt pushd_ignore_dups # ディレクトリスタックに重複する物は古い方を削除
 setopt list_packed       # 補完結果をできるだけ詰める
+
+### flow_controlが効いているとpecosshが効かない
+setopt no_flow_control
 
 ### 補完機能を有効にする
 autoload -Uz compinit
@@ -114,7 +117,7 @@ bindkey '^R' peco-history-selection
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 ### peco&ssh
-function peco-ssh () {
+function pecossh () {
   local selected_host=$(awk '
   tolower($1)=="host" {
     for (i=2; i<=NF; i++) {
@@ -123,16 +126,17 @@ function peco-ssh () {
       }
     }
   }
-  ' ~/.ssh/conf.d/*/config | sort | peco --layout bottom-up --query "$LBUFFER")
-  #' ~/.ssh/conf.d/*/config | sort | peco --query "$LBUFFER")
+  ' ~/.ssh/conf.d/*/config | sort | peco --query "$LBUFFER")
+  #' ~/.ssh/conf.d/*/config | sort | peco --layout bottom-up --query "$LBUFFER")
   if [ -n "$selected_host" ]; then
-    BUFFER="ssh -A ${selected_host}"
+    BUFFER="ssh ${selected_host}"
     zle accept-line
   fi
   zle clear-screen
 }
-zle -N peco-ssh
-bindkey '^S' peco-ssh
+
+zle -N pecossh
+bindkey '^S' pecossh
 
 ### iTerm
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
