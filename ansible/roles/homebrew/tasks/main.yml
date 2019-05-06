@@ -7,6 +7,7 @@
     state: present
   loop:
     - caskroom/fonts
+    - mackerelio/mackerel-agent
     - sanemat/font
     - osx-cross/avr
     - PX4/homebrew-px4
@@ -37,6 +38,7 @@
     - iproute2mac
     - jq
     - macvim
+    - mkr
     - neovim
     - nodebrew
     - oath-toolkit
