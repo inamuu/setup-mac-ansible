@@ -4,9 +4,6 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
 
-" Filer
-NeoBundle 'Shougo/vimfiler'
-
 " Modify status line
 NeoBundle 'itchyny/lightline.vim'
 
@@ -26,17 +23,6 @@ NeoBundle 'chase/vim-ansible-yaml'
 
 " ブロックのendを自動で挿入
 NeoBundle 'tpope/vim-endwise'
-
-" vim preview
-NeoBundle 'kannokanno/previm'
-NeoBundle 'tyru/open-browser.vim'
-
-" check syntax for puppet
-NeoBundleLazy 'puppetlabs/puppet-syntax-vim', {
-  \ 'autoload': {'filetypes': ['puppet']}}
-
-" memo
-NeoBundle 'glidenote/memolist.vim'
 
 call neobundle#end()
 
