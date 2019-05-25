@@ -211,8 +211,8 @@ eval "$(pyenv init -)"
 PATH=~/.rbenv/shims:"$PATH"
 
 ### Go
-export GOPATH=$HOME
-export PATH=$PATH:$GOPATH/bin
+export GOPATH=$HOME/.go
+export PATH=$PATH:$HOME/.go/bin
 
 ### docker
 alias do='docker'
