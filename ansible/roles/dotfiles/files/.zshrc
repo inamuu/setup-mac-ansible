@@ -182,7 +182,7 @@ alias gls='git ls-files --others --exclude-standard'
 alias gpl='git pull'
 alias gps='git push -u origin'
 alias gpsf='git push -f -u origin'
-alias gbrm="git branch --merged | grep -vE '^\*|master$|develop$' | xargs -I % git branch -d %"
+alias gbrm="git branch --merged | grep -vE '^\*|master$|develop$' | xargs -I % git branch -d % && git fetch --prune"
 alias github='cd ~/Github'
 
 ### tig
