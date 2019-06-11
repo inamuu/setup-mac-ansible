@@ -17,3 +17,6 @@ ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/workflows/user.wo
 
 ## Emoji Pack
 ansible/roles/app_config/files/alfred/Alfred.alfredpreferences/snippets/Emoji Pack/
+
+## karabinerで自動的に生成されるバックアップファイル
+ansible/roles/dotfiles/files/.config/karabiner/automatic_backups/*
