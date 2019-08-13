@@ -156,12 +156,15 @@ alias rm='rm -vi'
 alias mv='mv -vi'
 alias cp='cp -vi'
 alias ..='cd ..'
-alias vi='vim'
 alias c='clear'
 alias date='/usr/local/bin/gdate'
 alias sed='/usr/local/bin/gsed'
 
 function chpwd() { ls -GAF }
+
+### vim(brew install vim)
+alias vi='/usr/local/bin/vim'
+alias vim='/usr/local/bin/vim'
 
 ### tmux bug fix
 alias ssh='TERM=xterm ssh'

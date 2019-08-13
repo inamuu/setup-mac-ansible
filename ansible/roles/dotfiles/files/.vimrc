@@ -57,6 +57,9 @@ set noswapfile
 set noundofile
 " set browsedir=~/Documents
 
+" visualmode to clipboard
+set clipboard+=unnamed
+
 " VimFiler
 let g:vimfiler_as_default_explorer = 1
 
@@ -125,3 +128,4 @@ map <Leader>mn  :MemoNew<CR>
 map <Leader>ml  :MemoList<CR>
 map <Leader>mg  :MemoGrep<CR>
 let g:memolist_path = "~/memo"
+

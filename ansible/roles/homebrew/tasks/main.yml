@@ -37,7 +37,6 @@
     - hub
     - iproute2mac
     - jq
-    - macvim
     - mkr
     - neovim
     - nodebrew
@@ -59,6 +58,7 @@
     - tmux
     - tree
     - tree
+    - vim
     - w3m
     - watch
     - wget
