@@ -138,6 +138,17 @@ function pecossh () {
 zle -N pecossh
 bindkey '^S' pecossh
 
+### ctrl-wをスラッシュ区切り
+# https://ikm.hatenablog.jp/entry/2014/07/31/213052
+
+tcsh-backward-delete-word() {
+  local WORDCHARS="${WORDCHARS:s#/#}"
+    zle backward-delete-word
+  }
+zle -N tcsh-backward-delete-word
+bindkey "^W" tcsh-backward-delete-word
+
+
 ### iTerm
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
