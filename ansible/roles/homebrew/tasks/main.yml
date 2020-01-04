@@ -11,13 +11,15 @@
     - sanemat/font
     - osx-cross/avr
     - PX4/homebrew-px4
+    - aws/tap
 
 - name: homebrew
   homebrew: name={{ item }} state=present
   loop:
     - ansible
-    - avr-gcc
-    - avrdude
+    #- avr-gcc
+    #- avrdude
+    - aws-sam-cli
     - awscli
     - cask
     - coreutils
