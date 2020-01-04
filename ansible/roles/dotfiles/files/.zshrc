@@ -219,7 +219,8 @@ alias ber='bundle exec rake'
 alias gh='ghq look $(ghq list | peco --layout bottom-up)'
 
 ### Python
-export PYENV_ROOT="$HOME/.pyenv"
+alias py='python'
+alias pe='pyenv'
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
