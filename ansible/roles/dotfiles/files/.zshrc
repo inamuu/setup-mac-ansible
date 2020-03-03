@@ -186,6 +186,7 @@ alias ga='git add'
 alias gb='git branch'
 alias gc='git checkout'
 alias gcp='git checkout $(git branch | peco | awk "{ print $NF }" )'
+alias gcpeco='git branch | awk "{print \$(NF -0)}" | peco --layout bottom-up | xargs git checkout'
 alias gd='git diff'
 alias gl='git log -n 10 --oneline'
 alias glog='git log'
@@ -198,7 +199,7 @@ alias gls='git ls-files --others --exclude-standard'
 alias gpl='git pull'
 alias gps='git push -u origin'
 alias gpsf='git push -f -u origin'
-alias gbrm="git branch --merged | grep -vE '^\*|master$|develop$' | xargs -I % git branch -d % && git fetch --prune"
+alias gbrm="git branch | grep -v master | xargs -I % git branch -D % && git fetch --prune"
 alias github='cd ~/Github'
 
 ### tig
