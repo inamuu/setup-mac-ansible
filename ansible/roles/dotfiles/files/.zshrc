@@ -28,7 +28,7 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.nodebrew/current/bin:$HOME/.local/bin:$PATH
+eval "$(nodenv init -)"
 # export MANPATH="/usr/local/man:$MANPATH"
 #source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8

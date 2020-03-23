@@ -41,7 +41,7 @@
     - jq
     - mkr
     - neovim
-    - nodebrew
+    - nodenv
     - oath-toolkit
     - openssl
     - peco
