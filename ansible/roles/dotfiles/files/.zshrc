@@ -233,8 +233,8 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:$HOME/.go/bin
 
 ### docker
-alias do='docker'
-alias doc='docker-compose'
+alias doc='docker'
+alias docc='docker-compose'
 alias dormi='do rmi -f $(do images | grep none | awk "{print $3}")'
 alias -g P='$(docker ps | tail -n +2 | peco --layout bottom-up | cut -d" " -f1)'
 alias -g PA='$(docker ps -a | tail -n +2 | peco --layout bottom-up | cut -d" " -f1)'
