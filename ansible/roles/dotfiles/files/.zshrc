@@ -178,7 +178,7 @@ alias vi='/usr/local/bin/vim'
 alias vim='/usr/local/bin/vim'
 
 ### tmux bug fix
-alias ssh='TERM=xterm ssh'
+alias ssh='TERM=xterm-256color ssh'
 
 ### git
 alias g='git'

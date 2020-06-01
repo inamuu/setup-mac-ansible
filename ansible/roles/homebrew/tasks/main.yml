@@ -22,6 +22,7 @@
     - aws-sam-cli
     - awscli
     - cask
+    - composer
     - coreutils
     - dfu-programmer
     - direnv
