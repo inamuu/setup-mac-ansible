@@ -251,3 +251,4 @@ KEYTIMEOUT=0
 ### Others
 alias evc='envchain'
 
+export PATH="/usr/local/sbin:$PATH"
