@@ -44,8 +44,8 @@ eval "$(nodenv init -)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ### custom variables
-export USER=inamuu
-export USERNAME=inamuu
+export USER=kazuma
+export USERNAME=kazuma
 export LANG=ja_JP.UTF-8
 
 ### ref: http://oomatomo.hatenablog.com/entry/36401841
@@ -219,18 +219,18 @@ alias ber='bundle exec rake'
 ### ghq
 alias gh='ghq look $(ghq list | peco --layout bottom-up)'
 
-### Python
-alias py='python'
-alias pe='pyenv'
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-### Ruby
-PATH=~/.rbenv/shims:"$PATH"
-
-### Go
-export GOPATH=$HOME/.go
-export PATH=$PATH:$HOME/.go/bin
+#### Python
+#alias py='python'
+#alias pe='pyenv'
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
+#
+#### Ruby
+#PATH=~/.rbenv/shims:"$PATH"
+#
+#### Go
+#export GOPATH=$HOME/.go
+#export PATH=$PATH:$HOME/.go/bin
 
 ### docker
 alias doc='docker'
@@ -252,3 +252,7 @@ KEYTIMEOUT=0
 alias evc='envchain'
 
 export PATH="/usr/local/sbin:$PATH"
+
+### node
+eval "$(anyenv init -)"
+
