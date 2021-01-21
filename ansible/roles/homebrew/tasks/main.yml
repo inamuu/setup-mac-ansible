@@ -16,6 +16,7 @@
 - name: homebrew
   homebrew: name={{ item }} state=present
   loop:
+    - anyenv
     - ansible
     #- avr-gcc
     #- avrdude
@@ -34,39 +35,30 @@
     - ghq
     - git
     - gnu-sed
-    - go
     - grep
     - htop
     - hub
     - iproute2mac
     - jq
     - mkr
-    - neovim
-    - nodenv
     - oath-toolkit
     - openssl
     - peco
     - putty
-    - pyenv
     - python
-    - rbenv
     - reattach-to-user-namespace
     - ricty
     - ruby-build
-    - sl
     - sqlite
     - telnet
-    - terraform
     - tig
     - tmux
-    - tree
     - tree
     - vim
     - w3m
     - watch
     - wget
     - zlib
-    - zsh
     - zsh-completions
 
 - name: pip packages
@@ -96,15 +88,10 @@
     - google-chrome
     - google-japanese-ime
     - iterm2
-    - jasper
     - karabiner
     - karabiner-elements
     - macdown
-    - messenger
     - shiftit
     - skitch
-    - skype
     - slack
-    - thunderbird
-    - virtualbox
     - visual-studio-code
