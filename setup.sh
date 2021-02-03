@@ -18,3 +18,4 @@ if [ ! -f "/usr/local/bin/ansible" ]; then
 else
   echo "Already installed ansible"
 fi
+
