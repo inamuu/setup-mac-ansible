@@ -6,7 +6,6 @@
     name: '{{ item }}'
     state: present
   loop:
-    - caskroom/fonts
     - mackerelio/mackerel-agent
     - sanemat/font
     - osx-cross/avr
@@ -17,7 +16,6 @@
   homebrew: name={{ item }} state=present
   loop:
     - anyenv
-    - ansible
     #- avr-gcc
     #- avrdude
     - aws-sam-cli
@@ -32,7 +30,6 @@
     - envchain
     - fontforge
     - gcc-arm-none-eabi
-    - ghq
     - git
     - gnu-sed
     - grep
@@ -42,13 +39,10 @@
     - jq
     - mkr
     - oath-toolkit
-    - openssl
     - peco
     - putty
-    - python
     - reattach-to-user-namespace
     - ricty
-    - ruby-build
     - sqlite
     - telnet
     - tig

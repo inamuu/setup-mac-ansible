@@ -2,6 +2,6 @@
   connection: local
   roles:
     - homebrew
-    - dotfiles
-    - cli_tools
-    - gemfiles
+    #- dotfiles
+    #- cli_tools
+    #- gemfiles
